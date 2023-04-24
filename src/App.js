@@ -24,7 +24,7 @@ function App() {
   };
   return (
     <div className="container-fluid">
-      <div className="input-group mb-3">
+      <div className="input-group input-group-lg">
         <input
           type="text"
           className="form-control"
@@ -39,11 +39,15 @@ function App() {
 
       {typeof weatherData.main === "undefined" ? (
         <div>
-          <p>Welcome to my weather app</p>
+          <p className="title">
+            Welcome to my Weather App. Please enter a city name!
+          </p>
         </div>
       ) : (
         <div>
-          <p>{weatherData.name}</p>
+          <p className="city">{weatherData.name}</p>
+          <p className="temp">{Math.round(weatherData.main.temp)}</p>
+          <p className="weather">{weatherData.weather[0].main}</p>
         </div>
       )}
     </div>

@@ -1,5 +1,44 @@
+body {
+  background: url(back2.jpeg);
+}
+p {
+  color: white;
+  font-family: "Noto Sans", sans-serif;
+  text-align: center;
+}
+
 .input-group {
   padding: 1.5rem;
   width: 80%;
   margin: auto;
+  opacity: 0.5;
+}
+
+.city {
+  font-size: 5rem;
+  font-weight: 200;
+  padding: 3rem;
+}
+.temp {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 7rem;
+  padding: 3rem;
+}
+.temp::after {
+  content: "\00B0 F";
+  font-size: 2rem;
+  font-weight: 500;
+  position: relative;
+  top: -3.5rem;
+}
+
+.weather {
+  font-weight: 100;
+  font-size: 3rem;
+  padding: 3rem;
+}
+.title {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.5rem;
 }
